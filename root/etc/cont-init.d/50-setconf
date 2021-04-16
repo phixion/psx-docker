@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+if [ ! -d "/opt" ]
+then 
+  mkdir /opt
+fi
+chown abc:abc -R /opt
