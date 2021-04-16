@@ -10,10 +10,10 @@ RUN apk add --no-cache \
      wget \
      unzip \
      python3 && \
- cd /tmp && \
- wget https://github.com/Al-Azif/ps4-exploit-host/releases/download/$PSXVER/ps4-exploit-host-$PSXVER.zip && \
- unzip /tmp/ps4-exploit-host-$PSXVER.zip && \
- cp -r /tmp/ps4-exploit-host /opt/psx-host && \
+    cd /tmp && \
+    wget https://github.com/Al-Azif/ps4-exploit-host/releases/download/$PSXVER/ps4-exploit-host-$PSXVER.zip && \
+    unzip /tmp/ps4-exploit-host-$PSXVER.zip && \
+    cp -r /tmp/ps4-exploit-host /opt/psx-docker && \
     rm -rf \
     /tmp/*
 
