@@ -1,7 +1,7 @@
 version: '2'
 services:
   psxdocker:
-    image: phixion/psx-docker:latest
+    image: ridelore/psx-docker:latest
     container_name: psx-docker
     network_mode: bridge
     restart: always
