@@ -13,7 +13,7 @@ RUN apk add --no-cache \
  cd /tmp && \
  wget https://github.com/Al-Azif/ps4-exploit-host/releases/download/$PSXVER/ps4-exploit-host-$PSXVER.zip && \
  unzip /tmp/ps4-exploit-host-$PSXVER.zip && \
- cp -r /tmp/ps4-exploit-host /opt/psx-host \
+ cp -r /tmp/ps4-exploit-host /opt/psx-host && \
     rm -rf \
     /tmp/*
 
