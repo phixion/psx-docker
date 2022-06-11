@@ -37,11 +37,11 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      #build all desired archs, tag it and push it
+      #build all desired archs, tag it and push it to dockerhub
     - name: build, tag and push dockerhub
       uses: docker/build-push-action@v2
       with:
         context: .
         platforms: linux/amd64,linux/arm64,linux/arm/v7
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/ranking:${{ steps.vars.outputs.tag }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/psx-docker:${{ steps.vars.outputs.tag }}
