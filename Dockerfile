@@ -4,7 +4,7 @@ ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="${VERSION} ${BUILD_DATE}"
 
-ARG PSXVER="v0.4.6a1"
+ARG PSXVER="v0.4.5"
 
 RUN apk add --no-cache \
      wget \
